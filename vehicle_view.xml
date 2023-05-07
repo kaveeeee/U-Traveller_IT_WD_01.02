@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/vezelimg2"
+        android:layout_width="185dp"
+        android:layout_height="214dp"
+        app:srcCompat="@drawable/vezel"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <EditText
+        android:id="@+id/bookingname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/vezelimg2"
+        app:layout_constraintTop_toBottomOf="@+id/vezelimg2" />
+
+    <EditText
+        android:id="@+id/bookingnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/bookingname"
+        app:layout_constraintTop_toBottomOf="@+id/bookingname" />
+
+    <EditText
+        android:id="@+id/bookingtime"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/bookingnumber"
+        app:layout_constraintTop_toBottomOf="@+id/bookingnumber" />
+
+    <EditText
+        android:id="@+id/bookingdate"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/bookingtime"
+        app:layout_constraintTop_toBottomOf="@+id/bookingnumber" />
+
+    <TextView
+        android:id="@+id/vehicledetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Details"
+        android:textColor="#5276DF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bookingname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/vezelimg2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/modelvezel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model : Honda(Vezel)"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bookingname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toEndOf="@+id/vezelimg2"
+        app:layout_constraintTop_toBottomOf="@+id/vehicledetails"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="CC : 1498cc"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/bookingname"
+        app:layout_constraintStart_toEndOf="@+id/vezelimg2"
+        app:layout_constraintTop_toBottomOf="@+id/modelvezel"
+        app:layout_constraintVertical_bias="0.116" />
+
+
+    <Button
+        android:id="@+id/bookingsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookingdate"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <Button
+        android:id="@+id/bookingedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="EDIT"
+        app:layout_constraintBottom_toBottomOf="@+id/bookingsubmit"
+        app:layout_constraintStart_toEndOf="@+id/bookingsubmit"
+        app:layout_constraintTop_toTopOf="@+id/bookingsubmit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bookingdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#F44336"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="@+id/bookingedit"
+        app:layout_constraintStart_toEndOf="@+id/bookingedit"
+        app:layout_constraintTop_toTopOf="@+id/bookingedit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
