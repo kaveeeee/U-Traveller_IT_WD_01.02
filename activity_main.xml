@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bmw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#4CAF50"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/serchbar"
+        android:layout_width="341dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Welcome"
+        android:textColor="#383083"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serchbar" />
+
+    <ImageView
+        android:id="@+id/vezelimg"
+        android:layout_width="163dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/vezeldetails"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:srcCompat="@drawable/vezel" />
+
+    <TextView
+        android:id="@+id/vezeldetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Vezel"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/toyotaimg"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_btn" />
+
+    <TextView
+        android:id="@+id/vezelprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price : 10000.00"
+        app:layout_constraintEnd_toStartOf="@+id/vezelimg"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vezeldetails" />
+
+    <ImageView
+        android:id="@+id/toyotaimg"
+        android:layout_width="165dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vezelimg"
+        app:srcCompat="@drawable/toyota" />
+
+    <TextView
+        android:id="@+id/toyotadetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Toyota"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/toyotaimg"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vezelimg" />
+
+    <TextView
+        android:id="@+id/toyotaprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price : 7500.00"
+        app:layout_constraintEnd_toStartOf="@+id/toyotaimg"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toyotadetails"/>
+
+    <ImageView
+        android:id="@+id/bmwimg"
+        android:layout_width="149dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toyotaimg"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bmw" />
+
+    <TextView
+        android:id="@+id/bmwdetails"
+        android:layout_width="48dp"
+        android:layout_height="18dp"
+        android:text="BMW"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/bmwimg"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toyotaimg" />
+
+    <TextView
+        android:id="@+id/bmwprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Price : 25000.00"
+        app:layout_constraintEnd_toStartOf="@+id/bmwimg"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmwdetails" />
+
+    <Button
+        android:id="@+id/all_btn"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="All"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/vezelimg"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/honda_btn"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:text="Honda"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/all_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toEndOf="@+id/all_btn"
+        app:layout_constraintTop_toTopOf="@+id/all_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/toyota_btn"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="5dp"
+        android:text="Toyota"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/honda_btn"
+        app:layout_constraintStart_toEndOf="@+id/honda_btn"
+        app:layout_constraintTop_toTopOf="@+id/honda_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bmw_btn"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="6dp"
+        android:text="BMW"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toyota_btn"
+        app:layout_constraintStart_toEndOf="@+id/toyota_btn"
+        app:layout_constraintTop_toTopOf="@+id/toyota_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/vezel_book_btn"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Book Now"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/toyotadetails"
+        app:layout_constraintEnd_toStartOf="@+id/vezelimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vezelprice" />
+
+    <Button
+        android:id="@+id/toyota_book_btn"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Book Now"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmwdetails"
+        app:layout_constraintEnd_toStartOf="@+id/toyotaimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toyotaprice" />
+
+    <Button
+        android:id="@+id/bmw_book_btn"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Book Now"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bmwimg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bmwprice"
+        app:layout_constraintTop_toBottomOf="@+id/bmwprice"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
