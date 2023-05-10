@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    tools:context=".HotelActivity">
+
+    <TextView
+        android:id="@+id/subTitleTv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_edittext01"
+        android:fontFamily="@font/sansita"
+        android:text="Admin Panel"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_below="@id/subTitleTv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="15dp"
+        android:background="@drawable/shape_edittext01"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/categoriesRv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottomLl"
+    android:layout_below="@id/searchEt"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/row_hotel" />
+
+    <LinearLayout
+        android:id="@+id/bottomLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addCategoryBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button01"
+            android:minHeight="50dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/sansita"
+            android:textSize="28sp"
+            android:text="+ Add Category"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addClothesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="50dp"
+            android:minHeight="50dp"
+            android:textAllCaps="false"
+            android:src="@drawable/ic_photo"
+            android:background="@drawable/shape_edittext01"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>
